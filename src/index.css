@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import '@fontsource/mona-sans';
+
+@theme {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+  --font-mona-sans: 'Mona Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
