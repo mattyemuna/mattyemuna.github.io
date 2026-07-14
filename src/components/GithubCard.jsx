@@ -82,10 +82,10 @@ export default function GithubCard() {
           style={{ objectPosition: '50% 20%' }}
         />
 
-        <p className="mt-4 font-ibm-plex-sans text-xl font-semibold text-[#18191a]">
+        <p className="mt-4 font-ibm-plex-sans text-xl leading-none font-semibold text-[#18191a]">
           Matthew Emuna
         </p>
-        <p className="mt-0 font-mona-sans text-2xl text-[#5a5959]">mattyemuna</p>
+        <p className="mt-[-2px] font-mona-sans text-2xl leading-none text-[#5a5959]">mattyemuna</p>
         <p className="mt-3 font-mona-sans text-base text-[#5a636d]">
           Compiles feelings, mostly bugs
         </p>
