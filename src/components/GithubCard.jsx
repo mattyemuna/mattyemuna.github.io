@@ -68,7 +68,7 @@ function RepoCard({ name, description, language, languageColor }) {
 
 export default function GithubCard() {
   return (
-    <div className="flex w-[1250px] gap-[54px] rounded-[10px] bg-[#ebebeb] p-8">
+    <div className="relative z-10 flex w-[1250px] gap-[54px] rounded-[10px] bg-[#ebebeb] p-8">
       <div className="flex w-[264px] shrink-0 flex-col">
         <div className="mb-4 flex items-center gap-2 text-black">
           <GithubMarkIcon className="size-4" />

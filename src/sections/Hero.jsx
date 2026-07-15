@@ -1,5 +1,6 @@
 import ArrowRightIcon from '../components/ArrowRightIcon'
 import GithubCard from '../components/GithubCard'
+import WireStrands from '../components/WireStrands'
 
 function HeroButton({ href, width, children }) {
   return (
@@ -16,8 +17,12 @@ function HeroButton({ href, width, children }) {
 
 export default function Hero() {
   return (
-    <section id="hero" className="bg-[#dadada] pb-16">
-      <div className="mx-auto max-w-[1440px]">
+    <section id="hero" className="relative pb-16">
+      <WireStrands
+        trigger="load"
+        className="pointer-events-none absolute top-[-140px] left-0 z-0 aspect-[1440/1159] w-full"
+      />
+      <div className="relative z-10 mx-auto max-w-[1440px]">
         <p className="pt-[43px] pl-[77px] font-space-grotesk text-[48px] leading-none font-light text-[#393c42]">
           Hi, I&rsquo;m...
         </p>
