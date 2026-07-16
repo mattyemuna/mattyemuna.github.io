@@ -1,5 +1,6 @@
 import crosshairIcon from '../assets/crosshair-icon.png'
 import ontargetDemo from '../assets/ontarget-demo.png'
+import { GlareCard } from '@/components/ui/glare-card'
 
 const TAGS = [
   'Python',
@@ -35,31 +36,45 @@ function ProjectCardShell({ children }) {
 
 function OnTargetCard() {
   return (
-    <ProjectCardShell>
-      <div className="flex items-center gap-3">
-        <img src={crosshairIcon} alt="" className="size-16" />
-        <h3 className="font-ibm-plex-sans text-[30px] font-semibold text-[#18191a]">OnTarget</h3>
-      </div>
-      <p className="mt-3 font-ibm-plex-sans text-lg font-light text-black">
-        Full-stack web app that predicts expected goals (xG) for any PL matchup using a
-        scikit-learn model trained on 5 seasons of team form, venue splits, Elo ratings, and
-        head-to-head data. Features a FastAPI backend, React/TypeScript frontend, and a
-        Claude-powered chat analyst (via Anthropic tool-use) that calls the prediction model live
-        and explains the numbers in plain football terms.
-      </p>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {TAGS.map((tag) => (
-          <TechTag key={tag}>{tag}</TechTag>
-        ))}
-      </div>
-      <div className="mt-3 rounded-[4px] bg-[#68dca4] p-[6px]">
-        <img
-          src={ontargetDemo}
-          alt="OnTarget app screenshot"
-          className="h-[300px] w-full rounded-[4px] object-cover"
-        />
-      </div>
-    </ProjectCardShell>
+    <a
+    href="https://premier-league-xg-predictor.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block h-[721px] w-[620px] shrink-0">
+      <GlareCard className="bg-[#dadada]">
+        <div className="h-full w-full rounded-[10px] border-[1.5px] border-[#838283] bg-[#dadada] p-6">
+          <div className="flex items-center gap-3">
+            <img src={crosshairIcon} alt="" className="size-16" />
+
+            <h3 className="font-ibm-plex-sans text-[30px] font-semibold text-[#18191a]">
+              OnTarget
+            </h3>
+          </div>
+
+          <p className="mt-3 font-ibm-plex-sans text-lg font-light text-black">
+            Full-stack web app that predicts expected goals (xG) for any PL matchup using a
+            scikit-learn model trained on 5 seasons of team form, venue splits, Elo ratings, and
+            head-to-head data. Features a FastAPI backend, React/TypeScript frontend, and a
+            Claude-powered chat analyst (via Anthropic tool-use) that calls the prediction model
+            live and explains the numbers in plain football terms.
+          </p>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            {TAGS.map((tag) => (
+              <TechTag key={tag}>{tag}</TechTag>
+            ))}
+          </div>
+
+          <div className="mt-3 rounded-[4px] bg-[#68dca4] p-[6px]">
+            <img
+              src={ontargetDemo}
+              alt="OnTarget app screenshot"
+              className="h-[300px] w-full rounded-[4px] object-cover"
+            />
+          </div>
+        </div>
+      </GlareCard>
+    </a>
   )
 }
 

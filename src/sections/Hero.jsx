@@ -1,6 +1,10 @@
 import ArrowRightIcon from '../components/ArrowRightIcon'
 import GithubCard from '../components/GithubCard'
 import WireStrands from '../components/WireStrands'
+import { MagneticButton } from "@/components/ui/magnetic-button";
+import AnimatedLinkedInButton from '../components/AnimatedLinkedInButton'
+import ScrambleText from '../components/ScrambleText'
+import AnimatedResumeButton from '../components/AnimatedResumeButton'
 
 function HeroButton({ href, width, children }) {
   return (
@@ -27,18 +31,20 @@ export default function Hero() {
           Hi, I&rsquo;m...
         </p>
         <h1 className="mt-[6px] pl-[142px] font-space-grotesk text-[96px] leading-none font-medium whitespace-nowrap text-[#181a1d]">
-          Matthew Emuna
+        <ScrambleText
+          text="Matthew Emuna"
+          speed={80}
+          settleDelay={220}
+        />
         </h1>
         <div className="mt-[22px] flex gap-[34px] pl-[157px]">
-          <HeroButton href="/resume.pdf" width="144px">
-            Resume
-          </HeroButton>
-          <HeroButton href="https://linkedin.com" width="153px">
-            LinkedIn
-          </HeroButton>
-          <HeroButton href="#contact" width="140px">
-            Contact
-          </HeroButton>
+          <AnimatedResumeButton />
+          <AnimatedLinkedInButton />
+          <MagneticButton>
+            <HeroButton href="mailto:mattycodes@outlook.com?subject=Let's%20Connect!" width="140px">
+              Contact
+            </HeroButton>
+          </MagneticButton>
         </div>
         <div className="mt-12 pl-[95px]">
           <GithubCard />
