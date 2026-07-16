@@ -17,12 +17,12 @@ function HeroButton({ href, width, children }) {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative pb-16">
+    <section id="hero" className="relative h-screen snap-start snap-always">
       <WireStrands
         trigger="load"
         className="pointer-events-none absolute top-[-140px] left-0 z-0 aspect-[1440/1159] w-full"
       />
-      <div className="relative z-10 mx-auto max-w-[1440px]">
+      <div className="relative z-10 mx-auto h-full max-w-[1440px] overflow-y-auto pb-16">
         <p className="pt-[43px] pl-[77px] font-space-grotesk text-[48px] leading-none font-light text-[#393c42]">
           Hi, I&rsquo;m...
         </p>

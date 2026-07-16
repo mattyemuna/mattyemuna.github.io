@@ -75,17 +75,19 @@ function ComingSoonCard() {
 
 export default function Projects() {
   return (
-    <section id="projects" className="pt-24 pb-32">
-      <div className="mx-auto max-w-[1440px]">
+    <section id="projects" className="h-screen snap-start snap-always">
+      <div className="mx-auto flex h-full max-w-[1440px] flex-col overflow-y-auto pt-4 pb-2">
         <h2 className="text-center font-space-grotesk text-[64px] font-medium text-[#181a1d]">
           Projects
         </h2>
-        <p className="mt-4 text-center font-ibm-plex-sans text-[26px] font-light text-[#393c42]">
+        <p className="mt-2 text-center font-ibm-plex-sans text-[26px] font-light text-[#393c42]">
           Here are some projects I&rsquo;ve worked on recently&hellip;
         </p>
-        <div className="mt-16 flex gap-[61px] pl-[63px]">
-          <OnTargetCard />
-          <ComingSoonCard />
+        <div className="flex flex-1 items-center justify-center">
+          <div className="flex gap-[61px]">
+            <OnTargetCard />
+            <ComingSoonCard />
+          </div>
         </div>
       </div>
     </section>
