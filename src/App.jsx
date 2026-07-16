@@ -6,8 +6,10 @@ import Skills from './sections/Skills'
 function App() {
   return (
     <main>
-      <Nav />
-      <Hero />
+      <div className="flex h-screen snap-start snap-always flex-col">
+        <Nav />
+        <Hero />
+      </div>
       <Projects />
       <Skills />
     </main>

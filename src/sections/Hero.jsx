@@ -17,7 +17,7 @@ function HeroButton({ href, width, children }) {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen snap-start snap-always">
+    <section id="hero" className="relative h-full flex-1">
       <WireStrands
         trigger="load"
         className="pointer-events-none absolute top-[-140px] left-0 z-0 aspect-[1440/1159] w-full"
