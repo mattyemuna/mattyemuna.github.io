@@ -3,7 +3,7 @@ import ArrowRightIcon from './ArrowRightIcon'
 export default function AnimatedResumeButton() {
   return (
     <a
-      href="/RESUME2copy.PDF"
+      href="/RESUME2copy.pdf"
       download="Matthew_Emuna_Resume.pdf"
       className="
         group flex h-[52px] w-[144px]
