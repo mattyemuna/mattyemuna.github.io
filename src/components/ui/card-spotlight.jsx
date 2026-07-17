@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const CardSpotlight = ({
   children,
   radius = 350,
-  color = "#262626",
+  color = "#68dca4",
   className,
   ...props
 }) => {
@@ -55,8 +55,8 @@ export const CardSpotlight = ({
             animationSpeed={5}
             containerClassName="bg-transparent absolute inset-0 pointer-events-none"
             colors={[
-              [59, 130, 246],
-              [139, 92, 246],
+              [104, 220, 164],
+              [148, 255, 200],
             ]}
             dotSize={3} />
         )}

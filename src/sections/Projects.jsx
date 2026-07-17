@@ -1,6 +1,7 @@
 import crosshairIcon from '../assets/crosshair-icon.png'
 import ontargetDemo from '../assets/ontarget-demo.png'
 import { GlareCard } from '@/components/ui/glare-card'
+import { CardSpotlight } from '@/components/ui/card-spotlight'
 
 const TAGS = [
   'Python',
@@ -37,12 +38,13 @@ function ProjectCardShell({ children }) {
 function OnTargetCard() {
   return (
     <a
-    href="https://premier-league-xg-predictor.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block h-[721px] w-[620px] shrink-0">
-      <GlareCard className="bg-[#dadada]">
-        <div className="h-full w-full rounded-[10px] border-[1.5px] border-[#838283] bg-[#dadada] p-6">
+      href="https://premier-league-xg-predictor.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block h-[721px] w-[620px] shrink-0 cursor-pointer"
+    >
+      <CardSpotlight className="h-full w-full rounded-[10px] bg-[#dadada] p-6">
+        <div className="relative z-20">
           <div className="flex items-center gap-3">
             <img src={crosshairIcon} alt="" className="size-16" />
 
@@ -73,7 +75,7 @@ function OnTargetCard() {
             />
           </div>
         </div>
-      </GlareCard>
+      </CardSpotlight>
     </a>
   )
 }
